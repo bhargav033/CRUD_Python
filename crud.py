@@ -2,9 +2,9 @@ import mysql.connector
 
 try:
     db = mysql.connector.connect(
-        host ="127.0.0.1",
-        user = "root",
-        password = "admin"
+        host ="",
+        user = "",
+        password = ""
 
                                 )
     mycursor = db.cursor()
@@ -17,8 +17,8 @@ def create_database():
     try:
         db=mysql.connector.connect(
             host ="127.0.0.1",
-            user = "root",
-            password = "admin"
+            user = "",
+            password = ""
 
         )
         mycursor=db.cursor()
@@ -34,8 +34,8 @@ def create_table():
     try:
         db=mysql.connector.connect(
             host ="127.0.0.1",
-            user = "root",
-            password = "admin",
+            user = "",
+            password = "",
             database = "employee_db"
         )
         mycursor=db.cursor()
@@ -57,8 +57,8 @@ def read_data():
     try:
         db=mysql.connector.connect(
             host="127.0.0.1",
-            user="root",
-            password="admin",
+            user="",
+            password="",
             database="employee_db"
         )
         mycursor=db.cursor()
@@ -77,8 +77,8 @@ def insert_record(name,designation,age):
     try:
         db=mysql.connector.connect(
             host="127.0.0.1",
-            user="root",
-            password="admin",
+            user="",
+            password="",
             database="employee_db"
         )
         mycursor=db.cursor()
@@ -96,8 +96,8 @@ def update_record(id,name,designation,age):
     try:
         db=mysql.connector.connect(
             host="127.0.0.1",
-            user="root",
-            password="admin",
+            user="",
+            password="",
             database="employee_db"
         )
         mycursor=db.cursor()
@@ -116,8 +116,8 @@ def delete_record(emp_id):
     try:
         db=mysql.connector.connect(
             host='127.0.0.1',
-            user='root',
-            password='admin',
+            user='',
+            password='',
             database='employee_db'
         )
         mycursor=db.cursor()
