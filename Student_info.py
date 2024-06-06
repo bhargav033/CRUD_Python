@@ -6,8 +6,8 @@ app=Flask(__name__)
 def DBconnection():
     return mysql.connector.connect(
         host='127.0.0.1',
-        user='root',
-        password='admin',
+        user='',
+        password='',
         database='student_details'
     )
 
