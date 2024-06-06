@@ -4,8 +4,8 @@ def database_connection():
     try:    
         db = mysql.connector.connect(
             host='127.0.0.1',
-            user='root',
-            password='admin'
+            user='',
+            password=''
 
             )
         db.cursor()
@@ -20,8 +20,8 @@ def create_database():
     try:
         db = mysql.connector.connect(
             host='127.0.0.1',
-            user='root',
-            password='admin'
+            user='',
+            password=''
         )
         mycursor=db.cursor()
         mycursor.execute("CREATE DATABASE IF NOT EXISTS student_details")
@@ -38,8 +38,8 @@ def create_table():
     try:
         db = mysql.connector.connect(
             host='127.0.0.1',
-            user='root',
-            password='admin',
+            user='',
+            password='',
             database='student_details'
 
         )
@@ -62,8 +62,8 @@ def insert_record(name,study,fee):
     try:
         db=mysql.connector.connect(
             host="127.0.0.1", 
-            user="root",
-            password="admin",
+            user="",
+            password="",
             database="student_details"
 
         )
@@ -83,8 +83,8 @@ def read_data():
     try:
         db=mysql.connector.connect(
             host="127.0.0.1", 
-            user="root", 
-            password="admin",
+            user="", 
+            password="",
             database="student_details"
         )
         mycursor=db.cursor()
@@ -103,8 +103,8 @@ def update_record(stuid,name,study,fee):
     try:
         db=mysql.connector.connect(
             host="127.0.0.1",
-            user="root",
-            password="admin",
+            user="",
+            password="",
             database="student_details"
         )
         mycursor=db.cursor()
@@ -124,8 +124,8 @@ def delete_record(stuid):
     try:
         db=mysql.connector.connect(
             host="127.0.0.1",
-            user="root",
-            password="admin",
+            user="",
+            password="",
             database="student_details"
 
         )
